@@ -4,7 +4,6 @@ let t1 = 0
 let read = 0
 basic.forever(function () {
     if (sensors.sensor_infraredTracking(DigitalPin.P1) || sensors.sensor_infraredTracking(DigitalPin.P12)) {
-        basic.showIcon(IconNames.Happy)
         if (read == 0) {
             t1 = input.runningTime()
             read = 1
@@ -19,6 +18,7 @@ basic.forever(function () {
             sensors.showDpAt(ledon_off._on, 1)
             sensors.digit(Math.trunc(time * 100) % 100 / 10, 2)
             sensors.digit(Math.trunc(time * 100) % 10, 3)
+            basic.showIcon(IconNames.Happy)
         }
     }
 })
