@@ -1,0 +1,22 @@
+{
+    "name": "timing gate",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "radio": "*",
+        "microphone": "*",
+        "sensors": "github:emakefun/pxt-sensorbit#7f42510a282bc18ed3fb9be376d9a43da41739bd"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj"
+}
